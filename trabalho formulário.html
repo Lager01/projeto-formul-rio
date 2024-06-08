@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário INFOESTE</title>
+    <link rel="stylesheet" href="estilo css.css">
+</head>
+<body class=fonte>
+<h2 class="negrito">FORMULÁRIO DE INSCRIÇÃO INFOESTE</h2>
+<P>Para saber mais sobre os novos imputs do HTML5 para formulários, <a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">clique aqui</a></P>
+<form class="formulario">
+
+    <label class="negrito" for="nome">Nome:</label><br>
+<br>
+    <input class="selecao" type="text" id="nome" name="nome" required><br>
+
+    <p class="negrito">Sexo</p>
+    <input type="radio" id="masculino" name="sexo" value="masculino">
+    <label for="masculino">Masculino</label><br>
+    <input type="radio" id="feminino" name="sexo" value="feminino">
+    <label for="feminino">Feminino</label><br>
+<br>
+    <label class="negrito" for="curso">Selecione o curso</label><br>
+<br>
+    <select class="selecao" id="curso" name="curso">
+        <option value="CienciaDaComputacao">Ciência da Computação</option>
+        <option value="EngenhariaDeSoftware">Engenharia de Software</option>
+    </select><br>
+<br>
+    <label class="negrito" class="selecao" for="mensagem">Escreva o motivo da sua participação no formulário:</label><br>
+<br>
+    <textarea class="selecao" id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br>
+<br>
+    <label class="negrito" for="email" >Email:</label><br>
+<br>
+    <input class="selecao" type="email" id="email" name="email" required><br>
+<br>
+    <label class="negrito" for="nascimento">Insira sua data de nascimento</label><br>
+<br>
+    <input class="selecao" type="date" id="nascimento" name="nascimento"><br>
+<br>
+    <input class="enviar" type="submit" value="Enviar">
+</form>
+
+
+
+
+
+
+<script>
+var nome=window.prompt("Seja Bem Vindo (a), digite seu nome")
+window.alert(`Obrigado ${nome}, aprecie esse humilde código`)
+
+</script>
+</body>
+</html>
